@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-j4qq
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0049-tenant/tkwch-fix-0075-0049-app/devfile-sample-j4qq@sha256:51e63474c57600248e74ab8eb46f6c738c232ecc193a5993ef4ebefd0c3a9370
+        name: my-nodejs
+        resources: {}
+status: {}
